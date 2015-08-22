@@ -1,0 +1,17 @@
+/**
+ * {{pkg.description}}
+ * @module {{pkg.name}}
+ * @version {{pkg.version}}
+ */
+
+"use strict";
+
+
+var BudLoader = require('./budLoader');
+function budLoader(config){
+    return new BudLoader(config);
+}
+
+budLoader.budLoader = budLoader;
+
+module.exports = budLoader;
