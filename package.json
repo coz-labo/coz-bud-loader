@@ -1,6 +1,6 @@
 {
   "name": "coz-bud-loader",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Bud loader for coz.",
   "main": "lib",
   "scripts": {
