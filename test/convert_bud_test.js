@@ -1,20 +1,27 @@
 /**
  * Test case for convertBud.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 
-var convertBud = require('../lib/convert_bud.js')
+const convertBud = require('../lib/convert_bud.js')
+const co = require('co')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-  done()
-}
+describe('Convert bud', () => {
+  before(() => co(function * () {
 
-exports.tearDown = function (done) {
-  done()
-}
+  }))
 
-exports[ 'Convert bud' ] = function (test) {
+  after(() => co(function * () {
 
-  test.done()
-}
+  }))
 
+  it('Convert bud', () => co(function * () {
+    let converted = [
+      { force: false },
+      { force: true }
+    ]
+    assert.ok(converted)
+  }))
+})
+/* global describe, before, after, it */

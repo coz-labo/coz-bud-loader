@@ -4,18 +4,13 @@
  * Run test
  */
 
-"use strict";
+'use strict'
 
-var path = require('path'),
-    apeTasking = require('ape-tasking'),
-    apeTesting = require('ape-testing');
+const apeTasking = require('ape-tasking')
+const apeTesting = require('ape-testing')
 
-var basedir = path.resolve(__dirname, '..');
-
-process.chdir(basedir);
+process.chdir(`${__dirname}/..`)
 
 apeTasking.runTasks('test', [
-    function (callback) {
-        apeTesting.runNodeunit('test/**/*_test.js', callback);
-    }
-], true);
+  () => apeTesting.runMocha('test/*_test.js')
+], true)

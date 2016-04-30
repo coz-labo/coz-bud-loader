@@ -1,20 +1,28 @@
 /**
  * Test case for makeupBud.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var makeupBud = require('../lib/makeup_bud.js')
+const makeupBud = require('../lib/makeup_bud.js')
+const co = require('co')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-  done()
-}
+describe('', () => {
+  before(() => co(function * () {
 
-exports.tearDown = function (done) {
-  done()
-}
+  }))
 
-exports[ 'Makeup bud' ] = function (test) {
+  after(() => co(function * () {
 
-  test.done()
-}
+  }))
 
+  it('Makeup bud', () => co(function * () {
+    let buds = yield makeupBud([
+      { data: { 'foo': 'bar' } }
+    ])
+    assert.deepEqual(buds, [ { data: { foo: 'bar' } } ])
+  }))
+})
+
+/* global describe, before, after, it */

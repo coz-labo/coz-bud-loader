@@ -1,24 +1,29 @@
 /**
  * Test case for evaluateBud.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var evaluateBud = require('../lib/evaluate_bud.js')
+const evaluateBud = require('../lib/evaluate_bud.js')
+const co = require('co')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-  done()
-}
+describe('Evaluate bud', () => {
+  before(() => co(function * () {
 
-exports.tearDown = function (done) {
-  done()
-}
+  }))
 
-exports[ 'Evaluate bud' ] = function (test) {
-  evaluateBud(function (callback) {
-    callback(null, {})
-  }, function (err) {
-    test.ifError(err)
-    test.done()
-  })
-}
+  after(() => co(function * () {
 
+  }))
+
+  it('Evaluate bud', () => co(function * () {
+    let evaluated = yield evaluateBud([
+      () => Promise.resolve({ foo: 'bar' }),
+      { hoge: 'fuge' }
+    ])
+    assert.deepEqual(evaluated, [ [ { foo: 'bar' } ], { hoge: 'fuge' } ])
+  }))
+})
+
+/* global describe, before, after, it */

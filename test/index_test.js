@@ -4,10 +4,15 @@
 
 'use strict'
 
-var index = require('../lib/index.js')
+const index = require('../lib/index.js')
+const co = require('co')
+const assert = require('assert')
 
-exports[ 'Eval index.' ] = function (test) {
-  var loader = index({})
-  test.ok(loader)
-  test.done()
-}
+describe('', () => {
+  it('Eval index.', () => co(function * () {
+    var loader = index({})
+    assert.ok(loader)
+  }))
+})
+
+/* global describe, before, after, it */

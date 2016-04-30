@@ -1,20 +1,30 @@
 /**
  * Test case for requireBud.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var requireBud = require('../lib/require_bud.js')
+const requireBud = require('../lib/require_bud.js')
+const co = require('co')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-  done()
-}
+describe('', () => {
+  before(() => co(function * () {
 
-exports.tearDown = function (done) {
-  done()
-}
+  }))
 
-exports[ 'Require bud' ] = function (test) {
+  after(() => co(function * () {
 
-  test.done()
-}
+  }))
 
+  it('Require bud', () => co(function * () {
+    let bud = yield requireBud([
+      { foo: 'bar' }
+    ])
+    assert.deepEqual(bud, [
+      { foo: 'bar' }
+    ])
+  }))
+})
+
+/* global describe, before, after, it */

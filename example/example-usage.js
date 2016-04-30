@@ -1,7 +1,9 @@
-var cozBudLoader = require('coz-bud-loader');
+'use strict'
 
-var loader = cozBudLoader({});
+const cozBudLoader = require('coz-bud-loader')
 
-loader.load('**/.*.bud', function (err, buds) {
-    /*...*/
-});
+let loader = cozBudLoader({})
+
+loader.load('**/.*.bud').then((bud) => {
+  /* ... */
+})
