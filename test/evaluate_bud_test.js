@@ -22,7 +22,7 @@ describe('Evaluate bud', () => {
       () => Promise.resolve({ foo: 'bar' }),
       { hoge: 'fuge' }
     ])
-    assert.deepEqual(evaluated, [ [ { foo: 'bar' } ], { hoge: 'fuge' } ])
+    assert.deepEqual(evaluated, [ { foo: 'bar' }, { hoge: 'fuge' } ])
   }))
 })
 
