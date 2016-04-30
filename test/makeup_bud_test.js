@@ -3,18 +3,18 @@
  * Runs with nodeunit.
  */
 
-var makeupBud = require('../lib/makeup_bud.js');
+var makeupBud = require('../lib/makeup_bud.js')
 
-exports.setUp = function(done) {
-    done();
-};
+exports.setUp = function (done) {
+  done()
+}
 
-exports.tearDown = function(done) {
-    done();
-};
+exports.tearDown = function (done) {
+  done()
+}
 
-exports['Makeup bud'] = function(test){
+exports[ 'Makeup bud' ] = function (test) {
 
-    test.done();
-};
+  test.done()
+}
 
