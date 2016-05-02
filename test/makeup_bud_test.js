@@ -8,7 +8,7 @@ const makeupBud = require('../lib/makeup_bud.js')
 const co = require('co')
 const assert = require('assert')
 
-describe('', () => {
+describe('makeup bud', () => {
   before(() => co(function * () {
 
   }))
