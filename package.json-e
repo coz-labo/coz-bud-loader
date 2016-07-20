@@ -1,13 +1,13 @@
 {
   "name": "coz-bud-loader",
-  "version": "2.0.8",
+  "version": "2.0.7",
   "description": "Bud loader for coz.",
   "main": "lib",
   "scripts": {
     "test": "./ci/test.js",
     "prepublish": "./ci/build.js"
   },
-  "repository": "coz-labo/coz-bud-loader",
+  "repository": "coz-repo/coz-bud-loader",
   "keywords": [
     "coz",
     "bud",
@@ -19,9 +19,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coz-labo/coz-bud-loader/issues"
+    "url": "https://github.com/coz-repo/coz-bud-loader/issues"
   },
-  "homepage": "https://github.com/coz-labo/coz-bud-loader#readme",
+  "homepage": "https://github.com/coz-repo/coz-bud-loader#readme",
   "dependencies": {
     "aglob": "^1.0.1",
     "coz-bud": "^3.0.0",
@@ -29,13 +29,13 @@
   },
   "devDependencies": {
     "ape-covering": "^3.0.3",
-    "ape-releasing": "^4.0.2",
+    "ape-releasing": "^4.0.1",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.7",
+    "ape-tasking": "^4.0.3",
     "ape-testing": "^4.0.1",
     "ape-tmpl": "^5.0.13",
     "ape-updating": "^4.0.4",
-    "coz": "^6.0.11",
+    "coz": "^6.0.6",
     "injectmock": "^2.0.0",
     "mkdirp": "^0.5.1"
   },
