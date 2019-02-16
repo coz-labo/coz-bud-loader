@@ -4,24 +4,24 @@
  */
 
 const convertBud = require('../lib/convert_bud.js')
-const co = require('co')
+
 const assert = require('assert')
 
 describe('Convert bud', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Convert bud', () => co(function * () {
+  it('Convert bud', async () => {
     let converted = [
       { force: false },
       { force: true }
     ]
     assert.ok(converted)
-  }))
+  })
 })
 /* global describe, before, after, it */

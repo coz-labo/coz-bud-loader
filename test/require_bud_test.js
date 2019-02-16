@@ -5,26 +5,26 @@
 'use strict'
 
 const requireBud = require('../lib/require_bud.js')
-const co = require('co')
+
 const assert = require('assert')
 
 describe('', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Require bud', () => co(function * () {
-    let bud = yield requireBud([
+  it('Require bud', async () => {
+    let bud = await requireBud([
       { foo: 'bar' }
     ])
     assert.deepEqual(bud, [
       { foo: 'bar' }
     ])
-  }))
+  })
 })
 
 /* global describe, before, after, it */

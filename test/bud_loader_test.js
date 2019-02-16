@@ -5,23 +5,23 @@
 'use strict'
 
 const BudLoader = require('../lib/bud_loader.js')
-const co = require('co')
+
 const assert = require('assert')
 
 describe('BudLoader', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Bud loader', () => co(function * () {
+  it('Bud loader', async () => {
     let src = +`${__dirname}/../doc/mocks/mock-bud.bud`
-    let bud = yield new BudLoader().load(src)
+    let bud = await new BudLoader().load(src)
     assert.ok(bud)
-  }))
+  })
 })
 
 /* global describe, before, after, it */
