@@ -1,6 +1,6 @@
 {
   "name": "coz-bud-loader",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Bud loader for coz.",
   "main": "lib",
   "scripts": {
@@ -28,13 +28,13 @@
     "unorm": "^1.5.0"
   },
   "devDependencies": {
-    "ababel": "^5.0.9",
+    "ababel": "^5.0.10",
     "amocha": "^5.0.1",
-    "ape-releasing": "^5.0.2",
-    "ape-tasking": "^4.0.11",
-    "ape-tmpl": "^6.0.12",
-    "ape-updating": "^5.0.1",
-    "coz": "^7.0.9",
+    "ape-releasing": "^5.0.7",
+    "ape-tasking": "^4.0.12",
+    "ape-tmpl": "^6.0.14",
+    "ape-updating": "^5.0.3",
+    "coz": "^7.0.16",
     "injectmock": "^2.0.0",
     "mkdirp": "^0.5.1"
   },
